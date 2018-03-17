@@ -15,7 +15,7 @@ if (!empty($_POST['userLogin']) && (!empty($_POST['userPass']))){
         }
 }
 if (!empty($_POST['username'])) {
-    $_SESSION['username'] = $_POST['username'];
+    $_SESSION['user']['username'] = $_POST['username'];
     header('Location: list.php');
     exit;
 };
