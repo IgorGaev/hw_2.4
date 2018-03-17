@@ -1,7 +1,7 @@
 <?php
 require_once 'function.php';
 if (isAutorizedUser()) {
-    $name = (string)$_SESSION['username'];
+    $name = (string)$_SESSION['user']['username'];
     $rating = '5';
     $textName = 'Молодец ' . $name . '!';
     $textRating = 'Оценка: ' . $rating;
